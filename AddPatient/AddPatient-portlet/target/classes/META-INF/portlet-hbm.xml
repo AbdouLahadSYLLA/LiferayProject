@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping default-lazy="false" auto-import="false">
+	<import class="com.example.plugins.model.Patient" />
+	<class name="com.example.plugins.model.impl.PatientImpl" table="AddPatient_Patient">
+		<cache usage="read-write" />
+		<id name="patientId" type="long">
+			<generator class="assigned" />
+		</id>
+		<property name="nom" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="prenom" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="patientAge" type="com.liferay.portal.dao.orm.hibernate.IntegerType" />
+		<property name="patientGenre" type="com.liferay.portal.dao.orm.hibernate.IntegerType" />
+		<property name="patientAddresse" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="patientEmail" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+	</class>
+</hibernate-mapping>

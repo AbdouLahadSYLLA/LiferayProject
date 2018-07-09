@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+
+<model-hints>
+	<model name="com.example.plugins.model.Patient">
+		<field name="patientId" type="long" />
+		<field name="nom" type="String" />
+		<field name="prenom" type="String" />
+		<field name="patientAge" type="int" />
+		<field name="patientGenre" type="int" />
+		<field name="patientAddresse" type="String" />
+		<field name="patientEmail" type="String" />
+	</model>
+</model-hints>

@@ -1,0 +1,21 @@
+<!DOCTYPE service-builder PUBLIC "-//Liferay//DTD Service Builder 6.2.0//EN" "http://www.liferay.com/dtd/liferay-service-builder_6_2_0.dtd">
+
+<service-builder package-path="com.example.plugins">
+	<namespace>AddPatient</namespace>
+    <entity name="Patient" local-service="true" remote-service="false">
+    
+    <!-- PK fields -->
+		<column name="patientId" type="long" primary="true" />
+		<column name="nom" type="String" />
+		<column name="prenom" type="String" />
+		<column name="patientAge" type="int" />
+		<column name="patientGenre" type="int" />
+		<column name="patientAddresse" type="String" />
+		<!-- Order -->
+        <column name="patientEmail" type="String"></column>
+		<order by="asc">
+			<order-column name="patientId" />
+		</order>
+    </entity>
+    
+</service-builder>
