@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+
+<model-hints>
+	<model name="com.example.plugins.model.Course">
+		<field name="courseId" type="long" />
+	</model>
+	<model name="com.example.plugins.model.Student">
+		<field name="studentId" type="long" />
+	</model>
+</model-hints>

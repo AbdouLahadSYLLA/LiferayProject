@@ -1,0 +1,16 @@
+<!DOCTYPE service-builder PUBLIC "-//Liferay//DTD Service Builder 6.2.0//EN" "http://www.liferay.com/dtd/liferay-service-builder_6_2_0.dtd">
+
+<service-builder package-path="com.example.plugins">
+	<namespace>StudentCourse</namespace>
+	<entity name="Student" local-service="true" remote-service="true" cache-enabled="false">
+    <column name="studentId" type="long" primary="true" />
+
+    <column name="courses" type="Collection" entity="Course" mapping-table="Courses_Students" />
+</entity>
+
+<entity name="Course" local-service="true" remote-service="true" cache-enabled="false">
+    <column name="courseId" type="long" primary="true" />
+
+    <column name="students" type="Collection" entity="Student" mapping-table="Courses_Students" />
+</entity>
+	</service-builder>
